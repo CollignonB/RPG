@@ -113,10 +113,13 @@ const IMGCLASS = {
     "Paysan" : "img/paysan.png"
 }
 
+let caracterTable = [];
 
 let img = document.getElementById("caracterFace");
 let icon = document.getElementById("caracterIcon");
+let caraName = document.getElementById("caracterFirstname");
 let classe = document.getElementById("caracterClass");
+let createBtn = document.getElementById("createBtn");
 
 classe.addEventListener("click", function() {
     // permet d'afficher l'image corespondante au choix de classe par l'utilasteur, 
@@ -125,3 +128,12 @@ classe.addEventListener("click", function() {
     icon.src = Object.keys(IMGCLASS).includes(this.value) ? IMGCLASS[this.value] : IMGCLASS.Paysan;
 })
 
+createBtn.addEventListener("click", function() {
+    if (classe.value === "Guerrier") {
+        let newWar = new warior(caraName.value);
+        caracterTable.push(newWar);
+    }else if (classe.value === "Mage"){
+        let newMage = new wizard(caraName.value);
+        caracterTable.push(newMage);
+    }
+})
