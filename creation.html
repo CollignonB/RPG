@@ -25,35 +25,73 @@
 
 <body>
 <nav class="nav">
-    <a class="nav-link active" href="#">Active</a>
-    <a class="nav-link" href="creation.html">création de perso</a>
-    <a class="nav-link" href="#">Link</a>
-    <!-- <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a> -->
-    </nav>
+  <a class="nav-link active" href="#">Active</a>
+  <a class="nav-link" href="creation.html">création de perso</a>
+  <a class="nav-link" href="#">Link</a>
+  <!-- <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a> -->
+  </nav>
 <head>
   <div class="jumbotron jumbotron-fluid">
     <div class="container">
-      <h1 class="display-4">RPG</h1>
-      <p class="lead"></p>
+      <h1 class="display-4">RPG création de perso</h1>
+      <p class="lead">Cette page permet de créer un personnage de RPG médiéval-fantastique</p>
     </div>
   </div>
 </head>
 
-<main class="container">  
+<main class="container">
+  <div class="row">
+    <div class="row col-6">
+      <form>
+        <div class="form-group">
+          <label for="caracterLastname">Nom du personnage</label>
+          <input type="text" class="form-control" id="caracterLastname" placeholder="Cubrillaint">
+        </div>
+        <div class="form-group">
+          <label for="caracterFirstname">Prénom du personnage</label>
+          <input type="text" class="form-control" id="caracterFirstname" placeholder="Gurdill">
+        </div>
+        <select class="form-control" id="caracterClass">
+          <option>Choisissez une classe</option>
+          <option>Guerrier</option>
+          <option>Mage</option>
+          <!-- <option>Voleur</option>
+          <option>Ranger</option> -->
+        </select>
+      </form>
+      <div class="row col-12">
+        <button type="button" class="btn btn-primary btn-sm col-8 mt-10" id="createBtn">Créer</button>
+      </div>
+      
+    </div>
+    
+    <form>
+      <div>
+        <img src="img/paysan.png" alt="caracter icon bsed on class choice" id="caracterIcon">
+      </div>
+      <div class="form-group col-12">
+        <label for="caracterFace">Ajouter une image</label>
+        <input type="file" class="form-control-file" id="caracterFace" onclick="getImg()">
+      </div>
+    </form>
+    
+  </div>
+  
+  
 </main>
 
 <footer>
-    <div class="jumbotron jumbotron-fluid mb-0">
-        <div class="container">
-          <h1 class="display-4">RPG</h1>
-          <p class="lead">tout droit reservé Baptiste COLLIGNON</p>
-        </div>
+  <div class="jumbotron jumbotron-fluid mb-0">
+      <div class="container">
+        <h1 class="display-4">RPG</h1>
+        <p class="lead">tout droit reservé Baptiste COLLIGNON</p>
       </div>
+    </div>
 </footer>
   <!-- Add your site or application content here -->
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
+  <script src="js/creation.js"></script>
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
