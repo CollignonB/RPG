@@ -44,19 +44,19 @@
     <div class="row col-6">
       <form>
         <div class="form-group">
-          <label for="caracterLastname">Nom du personnage</label>
-          <input type="text" class="form-control" id="caracterLastname" placeholder="Cubrillaint">
+          <label for="characterLastname">Nom du personnage</label>
+          <input type="text" class="form-control" id="characterLastname" placeholder="Cubrillaint">
         </div>
         <div class="form-group">
-          <label for="caracterFirstname">Prénom du personnage</label>
-          <input type="text" class="form-control" id="caracterFirstname" placeholder="Gurdill">
+          <label for="characterFirstname">Prénom du personnage</label>
+          <input type="text" class="form-control" id="characterFirstname" placeholder="Gurdill">
         </div>
-        <select class="form-control" id="caracterClass">
+        <select class="form-control" id="characterClass">
           <option>Choisissez une classe</option>
           <option>Guerrier</option>
           <option>Mage</option>
-          <!-- <option>Voleur</option>
-          <option>Ranger</option> -->
+          <option>Voleur</option>
+          <option>Ranger</option>
         </select>
       </form>
       <div class="row col-12">
@@ -67,16 +67,15 @@
     
     <form>
       <div>
-        <img src="img/paysan.png" alt="caracter icon bsed on class choice" id="caracterIcon">
+        <img src="img/paysan.png" alt="character icon bsed on class choice" id="characterIcon">
       </div>
       <div class="form-group col-12">
-        <label for="caracterFace">Ajouter une image</label>
-        <input type="file" class="form-control-file" id="caracterFace" onclick="getImg()">
+        <label for="characterFace">Ajouter une image</label>
+        <input type="file" class="form-control-file" id="characterFace" onclick="getImg()">
       </div>
     </form>
-    
   </div>
-  
+  <button type="button" class="btn btn-primary btn-sm mt-4 row" id="showBtn" onclick="showCarac()">Afficher les persos créés</button>
   
 </main>
 
