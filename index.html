@@ -1,0 +1,87 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+<head>
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4">RPG création de perso</h1>
+      <p class="lead">Cette page permet de créer un personnage de RPG médiéval-fantastique</p>
+    </div>
+  </div>
+</head>
+
+<main class="container">
+  <div class="row">
+    <div class="row col-6">
+      <form>
+        <div class="form-group">
+          <label for="caracterLastname">Nom du personnage</label>
+          <input type="text" class="form-control" id="caracterLastname" placeholder="Cubrillaint">
+        </div>
+        <div class="form-group">
+          <label for="caracterFirstname">Prénom du personnage</label>
+          <input type="text" class="form-control" id="caracterFirstname" placeholder="Gurdill">
+        </div>
+        <select class="form-control" id="caracterClass">
+          <option>Choisissez une classe</option>
+          <option>Guerrier</option>
+          <option>Mage</option>
+          <option>Voleur</option>
+          <option>Ranger</option>
+        </select>
+      </form>
+    </div>
+  
+    <form>
+      <div>
+        <img src="img/paysan.png" alt="caracter icon bsed on class choice" id="caracterIcon">
+      </div>
+      <div class="form-group col-12">
+        <label for="caracterFace">Ajouter une image</label>
+        <input type="file" class="form-control-file" id="caracterFace" onclick="getImg()">
+      </div>
+    </form>
+
+  </div>
+
+</main>
+  <!-- Add your site or application content here -->
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+
+</html>
